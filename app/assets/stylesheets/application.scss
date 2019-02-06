@@ -2,7 +2,8 @@
 
  body {
    padding-top: 56px;
-   background: url('../assets/tulip-bg.jpg') no-repeat center center fixed;
+   background-image: image-url(assets/tulip-bg);
+   background: no-repeat center center fixed;
     -moz-background-size: cover;
     -webkit-background-size: cover;
     -o-background-size: cover;
@@ -21,12 +22,18 @@
 
  .hero1 {
    background-image: image-url(hero1);
+   background-size: cover;
+
  }
  .hero2 {
    background-image: image-url(hero2);
+   background-size: cover;
+
  }
  .hero3 {
    background-image: image-url(hero3);
+   background-size: cover;
+
  }
 
 .headshot1 {
@@ -41,6 +48,9 @@
 
 .home-content-img {
   background-image: image-url(connected);
+  background-size: cover;
+  height: 300px;
+  width: 350px;
 }
 
  h1.header-main {
