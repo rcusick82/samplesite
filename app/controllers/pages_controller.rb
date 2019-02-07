@@ -4,4 +4,23 @@ class PagesController < ApplicationController
     render
   end
 
+  def resources
+    #code
+  end
+
+  def about
+    #code
+  end
+
+  def contact
+    #code
+  end
+
+  def team
+    #code
+  end
+
+  def services
+    #code
+  end
 end

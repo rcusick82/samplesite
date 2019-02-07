@@ -1,3 +1,7 @@
+/*
+ *= require rails_bootstrap_forms
+ */
+
 @import 'bootstrap';
 
  body {
@@ -48,7 +52,9 @@
   background-size: cover;
 }
 
-.home-content-img {
+
+
+.img-connected {
   background-image: image-url(connected);
   background-size: cover;
   height: 300px;

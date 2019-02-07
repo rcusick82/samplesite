@@ -6,6 +6,13 @@ ruby '2.5.3'
 gem 'bootstrap'
 gem 'jquery-rails'
 
+# Adding bootstrap form_for
+gem "bootstrap_form", ">= 4.1.0"
+
+gem 'mailgun-ruby', '~> 1.1'
+
+gem 'figaro', '~> 1.1', '>= 1.1.1'
+
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '~> 5.2.2'
 gem 'pg', '~> 0.18.2'

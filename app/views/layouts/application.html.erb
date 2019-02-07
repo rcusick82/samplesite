@@ -14,22 +14,28 @@
     <!-- Navigation -->
   <nav class="navbar fixed-top navbar-expand-lg navbar-dark bg-custom fixed-top">
     <div class="container">
-      <a class="navbar-brand" href="index.html">TheraSketch</a>
+      <a class="navbar-brand" href="<%= index_page_path %>">TheraSketch</a>
       <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
       <div class="collapse navbar-collapse" id="navbarResponsive">
         <ul class="navbar-nav ml-auto">
           <li class="nav-item">
-            <a class="nav-link" href="about.html">About</a>
+            <a class="nav-link" href="<%= about_page_path  %>">About</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="services.html">Services</a>
+            <a class="nav-link" href="<%= services_page_path %>">Services</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="contact.html">Contact</a>
+            <a class="nav-link" href="<%= contact_page_path %>">Contact</a>
           </li>
-          <li class="nav-item dropdown">
+          <li class="nav-item">
+            <a class="nav-link" href="<%= team_page_path %>">Our Team</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="<%= resources_page_path %>">Resources</a>
+          </li>
+          <!-- <li class="nav-item dropdown">
             <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownPortfolio" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
               Our Team
             </a>
@@ -40,8 +46,8 @@
               <a class="dropdown-item" href="portfolio-4-col.html">4 Column Portfolio</a>
               <a class="dropdown-item" href="portfolio-item.html">Single Portfolio Item</a>
             </div>
-          </li>
-          <li class="nav-item dropdown">
+          </li> -->
+          <!-- <li class="nav-item dropdown"> -->
             <!-- <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownBlog" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
               Blog
             </a> -->
@@ -50,7 +56,7 @@
               <a class="dropdown-item" href="blog-home-2.html">Blog Home 2</a>
               <a class="dropdown-item" href="blog-post.html">Blog Post</a>
             </div> -->
-          </li>
+          <!-- </li>
           <li class="nav-item dropdown">
             <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownBlog" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
               Resources
@@ -62,14 +68,16 @@
               <a class="dropdown-item" href="404.html">404</a>
               <a class="dropdown-item" href="pricing.html">Pricing Table</a>
             </div>
-          </li>
+          </li> -->
         </ul>
       </div>
     </div>
   </nav>
     <%= yield %>
     <!-- Footer -->
-<footer class="page-footer font-small bg-custom  pt-4">
+    <div class="container">
+
+<footer class="page-footer container-fluid font-small bg-custom  pt-4">
 
     <!-- Footer Links -->
     <div class="container-fluid text-center text-md-left">
@@ -81,8 +89,8 @@
         <div class="col-md-6 mt-md-0 mt-3">
 
           <!-- Content -->
-          <h5 class="text-uppercase">Footer Content</h5>
-          <p>Here you can use rows and columns here to organize your footer content.</p>
+          <h5 class="text-uppercase">ABC Clinic</h5>
+          <p>Family centered approach to therapy and wellness.</p>
 
         </div>
         <!-- Grid column -->
@@ -93,20 +101,20 @@
         <div class="col-md-3 mb-md-0 mb-3">
 
             <!-- Links -->
-            <h5 class="text-uppercase">Links</h5>
+            <!-- <h5 class="text-uppercase">Links</h5> -->
 
             <ul class="list-unstyled">
               <li>
-                <a href="#!">Link 1</a>
+                <a href="#!">Contact Us</a>
               </li>
               <li>
-                <a href="#!">Link 2</a>
+                <a href="#!">About Us</a>
               </li>
               <li>
-                <a href="#!">Link 3</a>
+                <a href="#!">Resources</a>
               </li>
               <li>
-                <a href="#!">Link 4</a>
+                <a href="#!">Useful Forms</a>
               </li>
             </ul>
 
@@ -117,20 +125,20 @@
           <div class="col-md-3 mb-md-0 mb-3">
 
             <!-- Links -->
-            <h5 class="text-uppercase">Links</h5>
+            <!-- <h5 class="text-uppercase">Links</h5> -->
 
             <ul class="list-unstyled">
               <li>
-                <a href="#!">Link 1</a>
+                <a href="#!">Our Team</a>
               </li>
               <li>
-                <a href="#!">Link 2</a>
+                <a href="#!">Our Philosophy</a>
               </li>
               <li>
-                <a href="#!">Link 3</a>
+                <a href="#!">Exercises</a>
               </li>
               <li>
-                <a href="#!">Link 4</a>
+                <a href="#!">Blog</a>
               </li>
             </ul>
 
@@ -150,6 +158,7 @@
     <!-- Copyright -->
 
   </footer>
+</div>
   <!-- Footer -->
   </body>
 </html>

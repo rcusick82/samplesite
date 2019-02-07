@@ -1,0 +1,11 @@
+<%# Empty file: app/views/message/new.html.erb %>
+
+<%= bootstrap_form_for @message, url: create_message_url do |f| %>
+  <%= notice %>
+  <%= @message.errors.full_messages.join(', ') %>
+
+  <%= f.text_field :name, placeholder: 'name' %>
+  <%= f.email_field :email, placeholder: 'email' %>
+  <%= f.text_area :body, placeholder: 'body' %>
+  <%= f.submit 'Send' %>
+<% end %>
